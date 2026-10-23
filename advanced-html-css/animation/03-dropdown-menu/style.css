@@ -29,4 +29,25 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
+/* Oops I applied it directly */
+/* Should've been on the visible class */
+.dropdown-menu {
+  transform-origin: top;
+  animation-name: drop-down;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
 
+@keyframes drop-down {
+  from {
+    transform: scale(1, 0);
+  }
+
+  60% {
+    transform: scale(1, 1.1);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
